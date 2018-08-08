@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block body%}
+
+<h1> Unswer: </h1>
+<ul class = "list-group">
+  {% for sentence in text %}
+    <li class="list-group-item">{{sentence}}</li>
+  {% endfor%}
+</ul>
+{% endblock %}
